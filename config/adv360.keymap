@@ -50,7 +50,7 @@
  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(LBKT))   &none   &none  &trans  &trans        &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(RBKT))   &none  &trans  &trans                         &trans   &trans    &none  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans            &trans   &none   &none  &trans   &none         &none   &trans    &none    &none  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &kp LG(LBKT)    &mo 0    &mo 1    &mo 2  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &kp LG(LBKT)    &kp K_VOL_UP &kp K_VOL_DN    &kp K_MUTE  &trans  &trans
             >;
         };
 
