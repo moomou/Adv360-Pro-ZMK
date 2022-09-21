@@ -50,7 +50,7 @@
  &trans  &trans  &trans        &trans        &trans  &kp LG(LS(LBKT))              &none   &none  &trans  &trans        &trans           &trans             &trans      &trans
  &trans  &trans  &trans        &trans        &trans  &kp LG(LS(RBKT))              &none  &trans  &trans                                 &trans             &trans       &none  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans        &trans        &trans            &trans              &none   &none  &trans   &none         &none           &trans              &none       &none  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_0            &trans  &kp LA(BACKSPACE)  &trans  &trans  &trans  &kp LG(LBKT)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
+ &trans  &trans  &trans  &kp LA(LEFT) &kp LA(RIGHT) &trans  &kp LA(BACKSPACE)  &trans  &trans  &trans  &kp LG(LBKT)  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans
             >;
         };
 
