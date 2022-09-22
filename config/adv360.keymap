@@ -19,13 +19,6 @@
                 <&kp>,
                 <&kp>;
         };
-        tds: tap_dance_single {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_SINGlE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp S>;
-        };
     };
 
     keymap {
@@ -45,8 +38,8 @@
             bindings = <
  &kp EQUAL           &kp F1         &kp F2                &kp F3                 &kp F4     &kp F5   &trans      &mo 3       &kp F6                &kp F7        &kp F8     &kp F9       &kp F10   &kp MINUS
    &kp TAB            &kp Q    &kp AT_SIGN        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp PIPE    &none      &none  &kp PAGE_UP  &kp LG(LEFT_BRACKET)  &kp LG(RBKT)  &kp KP_N9  &kp KP_MINUS    &kp BSLH
-   &kp ESC       &kp DOLLAR  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &none  &kp LCTRL     &kp LALT                                       &kp LGUI     &kp RCTRL       &none      &tds     &trans  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
- &kp LSHFT  &kp EXCLAMATION      &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp B    &none      &none     &kp HOME                 &none         &none       &tds         &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
+   &kp ESC       &kp DOLLAR  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE    &none  &kp LCTRL     &kp LALT                                       &kp LGUI     &kp RCTRL       &none      &kp PAGE_UP &trans  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
+ &kp LSHFT  &kp EXCLAMATION      &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp B    &none      &none     &kp HOME                 &none         &none       &kp PAGE_DOWN         &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
      &mo 2        &kp GRAVE       &kp CAPS              &kp LEFT              &kp RIGHT   &kp BKSP  &kp DEL    &kp END    &kp PG_DN             &kp ENTER     &kp KP_N0     &kp UP      &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
             >;
         };
