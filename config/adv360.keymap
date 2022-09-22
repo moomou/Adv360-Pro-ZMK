@@ -25,8 +25,9 @@
             label = "TAP_UP";
             tapping-term-ms = <200>;
             #binding-cells = <0>;
-            #flavor = "tap-preferred";
-            bindings = <&kp UP>, <&kp PAGE_UP>;
+            bindings =
+                <&kp UP>,
+                <&kp PAGE_UP>;
         };
 
         tap_down: tap_down {
@@ -34,8 +35,9 @@
             label = "TAP_DOWN";
             tapping-term-ms = <200>;
             #binding-cells = <0>;
-            #flavor = "tap-preferred";
-            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
+            bindings =
+                <&kp DOWN>,
+                <&kp PAGE_DOWN>;
         };
 
     };
