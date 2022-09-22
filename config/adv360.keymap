@@ -24,6 +24,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_UP";
             tapping-term-ms = <200>;
+            #binding-cells = <0>;
             #flavor = "tap-preferred";
             bindings = <&kp UP>, <&kp PAGE_UP>;
         };
@@ -32,6 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DOWN";
             tapping-term-ms = <200>;
+            #binding-cells = <0>;
             #flavor = "tap-preferred";
             bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
         };
