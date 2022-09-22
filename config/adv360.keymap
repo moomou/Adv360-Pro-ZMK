@@ -21,25 +21,19 @@
         };
 
         tap_up: tap_up {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             label = "TAP_UP";
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp UP>,
-                <&kp PAGE_UP>;
+            #flavor = "tap-preferred";
+            bindings = <&kp UP>, <&kp PAGE_UP>;
         };
 
         tap_down: tap_down {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             label = "TAP_DOWN";
             tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp DOWN>,
-                <&kp PAGE_DOWN>;
+            #flavor = "tap-preferred";
+            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
         };
 
     };
