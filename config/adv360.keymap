@@ -27,6 +27,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
+
+        td1: tap_sp_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_SP_ENTER";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
     };
 
     keymap {
