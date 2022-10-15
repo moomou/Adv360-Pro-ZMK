@@ -7,7 +7,6 @@
 / {
     behaviors {
         #include "macros.dtsi"
-
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -107,12 +106,6 @@
   &none         &none         &none         &none         &none            &none  &rgb_ug RGB_MEFS_CMD 5   &bt BT_CLR    &bt BT_CLR                                   &bt BT_CLR    &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5   &none   &none   &none   &none   &none   &none
   &none         &none         &none         &none         &none            &none                   &none        &none         &none         &none            &none         &none         &none                   &none   &none   &none   &none   &none   &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC  &rgb_ug RGB_TOG              &bl BL_TOG        &none         &none    &bl BL_TOG  &rgb_ug RGB_TOG    &bl BL_INC    &bl BL_DEC                   &none   &none   &none
-            >;
-        };
-
-        test_layer {
-            bindings = <
-                &td0
             >;
         };
     };
