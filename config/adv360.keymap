@@ -18,52 +18,6 @@
                 <&kp>,
                 <&kp>;
         };
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp N1>,
-                <&kp N2>,
-                <&kp N3>;
-        };
-        td1: tap_sp_enter {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SP_ENTER";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp SPACE>,
-                <&kp ENTER>;
-        };
-        td2: tap_left_paren_brace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_LEFT_PAREN_BRACE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp LEFT_BRACE>;
-        };
-        td3: tap_right_paren_brace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_RIGHT_PAREN_BRACE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp RIGHT_BRACE>;
-        };
-        td4: tap_equal_plus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_EQUAL_PLUS";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&kp EQUAL>,
-                <&kp PLUS>;
-        };
     };
 
     keymap {
