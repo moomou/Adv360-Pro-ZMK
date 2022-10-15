@@ -65,6 +65,24 @@
                 <&kp EQUAL>,
                 <&kp PLUS>;
         };
+        up_page_up: up_page_up {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UP_PAGE_UP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp UP>,
+                <&kp PAGE_UP>;
+        };
+        down_page_down: down_page_down {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOWN_PAGE_DOWN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =
+                <&kp DOWN>,
+                <&kp PAGE_DOWN>;
+        };
     };
 
     keymap {
@@ -83,8 +101,8 @@
         symbol {
             bindings = <
  &kp EQUAL           &kp F1         &kp F2                &kp F3                 &kp F4     &kp F5     &trans      &mo 3       &kp F6                &kp F7        &kp F8         &kp F9    &kp F10   &kp MINUS
-   &kp TAB            &kp Q    &kp AT_SIGN        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp PIPE      &none      &none  &kp PAGE_UP  &kp LG(LEFT_BRACKET)  &kp LG(RBKT)      &kp KP_N9    &kp F11    &kp BSLH
-   &kp ESC       &kp DOLLAR  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE  &kp EQUAL  &kp LCTRL     &kp LALT                                           &kp LGUI  &kp RCTRL       &none  &kp PAGE_DOWN     &trans  &kp KP_N5  &kp KP_N6       &kp F12    &kp SQT
+   &kp TAB            &kp Q    &kp AT_SIGN        &kp LEFT_BRACE        &kp RIGHT_BRACE   &kp PIPE      &none      &none  &up_page_up  &kp LG(LEFT_BRACKET)  &kp LG(RBKT)      &kp KP_N9    &kp F11    &kp BSLH
+   &kp ESC       &kp DOLLAR  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE  &kp EQUAL  &kp LCTRL     &kp LALT                                           &kp LGUI  &kp RCTRL       &none  &down_page_down     &trans  &kp KP_N5  &kp KP_N6       &kp F12    &kp SQT
  &kp LSHFT  &kp EXCLAMATION      &kp MINUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp PLUS      &none      &none     &kp HOME                 &none         &none  &kp PAGE_DOWN      &none       &none          &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
      &mo 2        &kp GRAVE       &kp CAPS              &kp LEFT              &kp RIGHT   &kp BKSP    &kp DEL    &kp END    &kp PG_DN             &kp ENTER     &kp KP_N0         &kp UP   &kp DOWN  &kp KP_DOT       &kp RBKT      &mo 2
             >;
